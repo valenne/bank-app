@@ -1,0 +1,71 @@
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (min-width: 1199.98px) {
+  #login-form {
+    width: 25%;
+  }
+  #register-form {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #login-form {
+    width: 43%;
+  }
+}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+  #login-form {
+    width: 41%;
+  }
+}
+
+/* Pantallas medianas (tablets de menos de 920px) */
+@media (max-width: 919.98px) {
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+  #login-form {
+    width: 50%;
+  }
+}
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+  #login-form {
+    width: 70%;
+  }
+  .dashboard-aside {
+    width: 35%;
+    padding: 1rem;
+  }
+  .dashboard-separation {
+    width: 5%;
+  }
+  .dashboard-info {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 414.98px) {
+  .dashboard-aside {
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+  }
+  .dashboard-separation {
+    width: 1%;
+  }
+  .dashboard-info {
+    width: 100%;
+  }
+}
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 356px) */
+@media (max-width: 355.98px) {
+  #login-form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,57 @@
+<section class="login">
+  <h3 class="main-secondary_title">Banco Digital de Chile</h3>
+  <form
+    action="/login"
+    method="POST"
+    class="px-5 py-3 m-auto card text-center wrapper form"
+    id="login-form"
+  >
+
+    <i class="fas fa-university fa-5x text-center my-2"></i>
+    <small class="mb-2 login-title">Banco Digital de Chile</small>
+    <h4>Iniciar Sesión</h4>
+    <div class="input-group mb-3" style="width: 80%;">
+      <span class="input-group-text" id="inputGroup-sizing-default"><i
+          class="fas fa-id-card"
+        ></i></span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Ingrese su RUT"
+        aria-label="Username"
+        id="rut"
+        name="rut"
+        {{! value="12.456.789-3" }}
+      />
+    </div>
+
+    <div class="input-group mb-3" style="width: 80%;">
+      <span
+        class="input-group-text d-flex justify-content-center"
+        id="inputGroup-sizing-default"
+      ><i class="fas fa-key"></i></span>
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Ingrese su clave"
+        aria-label="Username"
+        id="password"
+        value="123456"
+        name="password"
+      />
+    </div>
+
+    <button
+      id="btnLogin"
+      type="submit"
+      class="btn btn-dark w-50 m-auto btn-ingresar"
+      data-mdb-ripple-color="dark"
+    >Ingresar</button>
+    <a href="/register" class="mt-2 btn-text">Registrarme</a>
+    <a href="/terms" class="mt-2 btn-text">Terminos y condiciones</a>
+  </form>
+</section>
+
+<script src="/js/login.js">
+
+</script>

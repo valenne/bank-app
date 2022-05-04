@@ -1,0 +1,16 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+
+# dotenv environment variables file
+
+# End of https://www.toptal.com/developers/gitignore/api/node
+
+# Postgres
+logfile
+
+#documentation
+documentation.txt

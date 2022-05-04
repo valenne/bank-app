@@ -1,0 +1,36 @@
+<div class="section-datos">
+  <h2 style="text-align: center;">Datos Personales</h2>
+  <div class="datos-personales">
+    <table>
+      <tr>
+        <th>Nombre:</th>
+        <td>{{info.name}}</td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>{{info.email}}</td>
+      </tr>
+      <tr>
+        <th>Dirección:</th>
+        <td>{{info.address}}</td>
+      </tr>
+      <tr>
+        <th>Rut:</th>
+        <td>{{info.rut}}</td>
+      </tr>
+      <tr>
+        <th>N° Cuenta:</th>
+        <td>{{info.account}}</td>
+      </tr>
+    </table>
+  </div>
+  <button
+    class="btn btn-dark w-40 m-auto btn-ingresar fs-4 d-flex justify-content-center mt-4"
+    data-mdb-ripple-color="dark"
+    onclick="modificarDatos()"
+  >Modificar Datos</button>
+</div>
+
+<script src="/js/helperFunction.js">
+
+</script>

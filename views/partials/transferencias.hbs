@@ -1,0 +1,86 @@
+<div>
+  <h1>Transferencia</h1>
+  <form
+    action="/dashboard/transferencias"
+    method="POST"
+    class="px-2 py-3 m-auto col card text-center wrapper form"
+  >
+    <small class="mb-2 small-title">Destinatario</small>
+    <div class="input-group mb-3">
+      <span
+        class="input-group-text d-flex justify-content-center transfer-label-box"
+      >Nombre</span>
+      <input
+        class="form-control transfer-input-box"
+        placeholder="Nombre destinatario"
+        id="name"
+        name="name"
+        type="text"
+        required
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span
+        class="input-group-text d-flex justify-content-center transfer-label-box"
+      >Rut</span>
+      <input
+        class="form-control transfer-input-box"
+        placeholder="Rut destinatario"
+        id="rut"
+        name="rut"
+        type="text"
+        required
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span
+        class="input-group-text d-flex justify-content-center transfer-label-box"
+      >Email</span>
+      <input
+        class="form-control transfer-input-box"
+        placeholder="Email destinatario"
+        id="email"
+        name="email"
+        type="email"
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span
+        class="input-group-text d-flex justify-content-center transfer-label-box"
+      >Comentario</span>
+      <input
+        class="form-control transfer-input-box"
+        placeholder="Escribe un comentario"
+        id="comment"
+        name="comment"
+        type="text"
+        required
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span
+        class="input-group-text d-flex justify-content-center transfer-label-box"
+      >Monto</span>
+      <input
+        class="form-control transfer-input-box"
+        placeholder="Monto a transferir"
+        id="amount"
+        name="amount"
+        type="number"
+        required
+      />
+    </div>
+    <button
+      id="btnTransfer"
+      type="submit"
+      class="btn btn-dark w-50 m-auto btn-ingresar fs-4"
+      data-mdb-ripple-color="dark"
+    >Ingresar</button>
+
+  </form>
+
+</div>
+
+<script src="/js/transferencias.js"></script>

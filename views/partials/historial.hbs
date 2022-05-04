@@ -1,0 +1,65 @@
+<div class="section-historial">
+  <h2 style="text-align: center;">Historial de Transferencias</h2>
+  <div class="datos-personales">
+    <table class="historial-table table">
+
+      <thead style="text-align: center;">
+        <tr class="tr-header">
+          <th class="header-numero">N°</th>
+          <th class="header-fecha">Fecha</th>
+          <th class="header-nombre">Nombre</th>
+          <th class="header-transaccion">Transaccion</th>
+          <th class="header-comentario">Comentario</th>
+          <th class="header-monto">Monto</th>
+        </tr>
+      </thead>
+      {{#each historialData}}
+        <tr style="text-align:center;" class="historial-show">
+          <td>{{inc @index}}</td>
+          <td>{{this.date}}</td>
+          <td>{{this.name}}</td>
+          <td>{{this.transaccion}}</td>
+          <td>{{this.comment}}</td>
+          <td>{{this.amount}}</td>
+        </tr>
+        {{! media-queries on max: 860px }}
+        <tr style="text-align:center;" class="historial-hide">
+          <td class="header-numero">{{inc @index}}</td>
+          <td class="header-fecha">{{this.date}}</td>
+          <td class="header-nombre">{{this.name}}</td>
+          <td class="header-transaccion">{{this.transaccion}}</td>
+          <td class="header-comentario">{{this.comment}}</td>
+          <td class="header-monto">{{this.amount}}</td>
+        </tr>
+
+      {{/each}}
+
+    </table>
+    <nav
+      aria-label="Page navigation example"
+      class="d-flex justify-content-center mt-4"
+    >
+      <ul class="pagination">
+        <li class="page-item" id="prev"><a
+            class="page-link"
+            href=""
+          >Previous</a></li>
+        {{#each pagination}}
+          <li class="page-item"><a
+              class="page-link"
+              href="/dashboard/historial?page={{this}}"
+            >{{this}}</a></li>
+        {{/each}}
+        <li class="page-item" id="next"><a
+            class="page-link next"
+            href=""
+          >Next</a></li>
+      </ul>
+    </nav>
+  </div>
+
+</div>
+
+<script src="/js/pagination.js">
+
+</script>

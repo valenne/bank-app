@@ -1,0 +1,49 @@
+<section class="dashboard-section">
+  <div class="py-4"><h3 class="dashboard-title">Banco Digital de Chile</h3>
+  <button
+  class="btn btn-dark w-40 m-auto fs-4 d-flex justify-content-center mt-5"
+  id="delete-Cookie"
+  onclick="deleteCookie()"
+>Cerrar sesion</button></div>
+  
+
+  <div class="container row dashboard-inner">
+    {{! datos personales, tranferencia, historial }}
+    <div class="dashboard-aside fs-4">
+      {{> aside-menu }}
+    </div>
+    <div class="dashboard-separation"></div>
+    {{! Mensaje bienvenida, ultima conexion, saldo, ??imagen }}
+    <div class="dashboard-info fs-3">
+   
+   {{#equal dash "dashboard-index"}}
+    {{> dashboard-index}}
+  {{/equal}}
+
+  {{#equal dash "datos-personales"}}
+    {{> datos-personales}}
+  {{/equal}}
+
+  {{#equal dash "historial"}}
+    {{> historial}}
+  {{/equal}}
+
+  {{#equal dash "transferencias"}}
+    {{> transferencias}}
+  {{/equal}}
+
+  {{#equal dash "datos-personales-edit"}}
+    {{> datos-personales-edit}}
+ 
+  {{/equal}}
+    </div>
+    
+  </div>
+</section>
+
+
+
+{{!-- funcion que permite borrar el cookie con la informacion y redirigir a login --}}
+  <script src="/js/helperFunction.js">
+    
+  </script>

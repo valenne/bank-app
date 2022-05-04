@@ -1,0 +1,50 @@
+{
+  "error_list": {
+    "OK": {
+      "message": "The request completed successfully.",
+      "HTTPStatusCode": 200,
+      "name": "OK"
+    },
+    "BAD_REQUEST": {
+      "message": "The request is invalid.",
+      "HTTPStatusCode": 400,
+      "name": "BAD_REQUEST"
+    },
+    "RUT_NOT_VALID": {
+      "message": "The RUT is not valid.",
+      "HTTPStatusCode": 400,
+      "name": "RUT_NOT_VALID"
+    },
+    "USER_NOT_FOUND": {
+      "message": "The user was not found.",
+      "HTTPStatusCode": 400,
+      "name": "USER_NOT_FOUND"
+    },
+    "PASSWORD_NOT_MATCH": {
+      "message": "The password does not match.",
+      "HTTPStatusCode": 400,
+      "name": "PASSWORD_NOT_MATCH"
+    },
+
+    "CREDENDTIALS_ERROR": {
+      "message": "The request could not be authenticated, password or username is incorrect.",
+      "HTTPStatusCode": 401,
+      "name": "CREDENTIALS_ERROR"
+    },
+    "TOKEN_EXPIRED": {
+      "message": "The token has expired.",
+      "HTTPStatusCode": 401,
+      "name": "TOKEN_EXPIRED"
+    },
+    "NOT_FOUND": {
+      "message": "The specified resource was not found.",
+      "HTTPStatusCode": 404,
+      "name": "NOT_FOUND"
+    },
+    "INTERNAL_SERVER": {
+      "message": "Internal server error.",
+      "HTTPStatusCode": 500,
+      "name": "INTERNAL_SERVER"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+<section class="registro">
+  <h3 class="main-secondary_title">Banco Digital de Chile</h3>
+  <form
+    action="/register"
+    method="POST"
+    class="px-5 py-3 m-auto card text-center wrapper col-6"
+    id="register-form"
+  >
+    <i class="fas fa-university fa-5x text-center my-2"></i>
+
+    <small class="mb-2 small-title">Banco Digital de Chile</small>
+    <h4 class="h4-title">Registro</h4>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center"><i
+          class="fas fa-user-circle"
+        ></i></span>
+      <input
+        class="form-control"
+        placeholder="Ingrese su nombre completo"
+        id="nombre"
+        name="nombre"
+        {{! value="Name Test" }}
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center"><i
+          class="fas fa-envelope"
+        ></i></span>
+      <input
+        class="form-control"
+        placeholder="Ingrese su correo"
+        id="email"
+        name="email"
+        {{! value="email@test.com" }}
+        required
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center"><i
+          class="fas fa-id-card"
+        ></i></span>
+      <input
+        class="form-control"
+        placeholder="Ingrese su RUT"
+        id="rut"
+        name="rut"
+        {{! value="12.456.789-3" }}
+        required
+      />
+    </div>
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center">
+        <i class="fas fa-map-marker-alt"></i>
+
+      </span>
+      <input
+        class="form-control"
+        placeholder="Ingrese su dirección"
+        id="address"
+        name="address"
+        {{! value="Providencia, Santiago" }}
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center"><i
+          class="fas fa-key"
+        ></i></span>
+      <input
+        class="form-control"
+        type="password"
+        placeholder="Ingrese su clave"
+        id="password"
+        name="password"
+        value="123456"
+        required
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text d-flex justify-content-center"><i
+          class="fas fa-key"
+        ></i></span>
+      <input
+        class="form-control"
+        type="password"
+        placeholder="Confirme su clave"
+        id="passwordConfirm"
+        name="passwordConfirm"
+        value="123456"
+        required
+      />
+    </div>
+
+    <button
+      type="submit"
+      id="btnRegister"
+      class="btn btn-dark w-50 m-auto my-2"
+      data-mdb-ripple-color="dark"
+    >Registrarme</button>
+    <a href="/login" class="mt-2 btn-text px-3">Ingresar</a>
+  </form>
+</section>
+<script src="/js/registerUser.js"></script>
