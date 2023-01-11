@@ -6,6 +6,7 @@ jspm_packages/
 web_modules/
 
 # dotenv environment variables file
+.env
 
 # End of https://www.toptal.com/developers/gitignore/api/node
 
