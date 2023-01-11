@@ -71,7 +71,7 @@ Handlebars.registerHelper("equal", function (lvalue, rvalue, options) {
  */
 
 /* ----- Front get Page ----- */
-app.get("/index", (_, res) => {
+app.get("/", (_, res) => {
   res.render("index", {
     title: `Index`,
     styles: `styles`,
@@ -91,6 +91,7 @@ app.get("/terms", (req, res) => {
 });
 
 /* ----- Deploy error page ----- */
+
 app.get("*", (req, res) => {
   res.render("error/error_404", {
     title: `Error 404`,
