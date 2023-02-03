@@ -167,6 +167,7 @@ body {
   margin: 0 auto;
   height: 30rem;
   width: 50%;
+  border-radius: 1rem;
 }
 .login-title {
   font-size: 1.4rem;
@@ -200,6 +201,7 @@ body {
   justify-content: center;
   margin: 0 auto;
   width: 50%;
+  border-radius: 1rem;
 }
 
 .login form h4 {
